@@ -1,0 +1,352 @@
+/*Reset*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main--bg-color: #2b2728;
+  --secondary-bg-color: #2f3061;
+  --tertiary-bg-color: #343434;
+  --quaternary-bg-color: #ffe66d;
+  --font-primary-color: #212529;
+  --light-font-color: #343a40;
+}
+
+/*Main Styling*/
+html,
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/*Header*/
+
+#navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+  background: white;
+}
+
+#navbar img {
+  width: 90px;
+  height: 63px;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: var(--main--bg-color);
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 1.25rem;
+}
+
+#navbar ul li a:hover {
+  background: var(--main--bg-color);
+  color: white;
+  border-radius: 5px;
+}
+
+/*Showcase*/
+
+#showcase {
+  background: var(--main--bg-color)
+    url("https://aventurecolombia.com/wp-content/uploads/2021/03/Desert-de-Tatacoa-%C2%A9-tristan-quevilly-1536x1024.jpg.webp")
+    no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /*Overlay*/
+  position: absolute;
+  top: 95px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: var(--main--bg-color);
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: white;
+  color: var(--main--bg-color);
+}
+
+/*Statement Section*/
+
+#statement-section {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.description {
+  padding: 0.75rem 1rem;
+  background-color: var(--secondary-bg-color);
+  color: white;
+}
+
+#img-mission {
+  background: url("https://img.theculturetrip.com/450x/smart/wp-content/uploads/2021/07/hhdyyc.jpg")
+    no-repeat center center/cover;
+  height: 299px;
+}
+
+#img-statement {
+  background: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/62/2b/0b/caption.jpg?w=1200&h=-1&s=1")
+    no-repeat center center/cover;
+  height: 299px;
+}
+
+.statement-heading {
+  padding-top: 0.35rem;
+}
+
+.statement-text {
+  padding: 0.5rem;
+}
+
+/*Destinations*/
+
+#adventure-destinations {
+  background-color: var(--tertiary-bg-color);
+  text-align: center;
+  color: white;
+  padding-top: 12px;
+}
+
+#destinations {
+  display: flex;
+  background-color: var(--tertiary-bg-color);
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 12px;
+}
+
+#place-to-dive {
+  background: url("https://s3.amazonaws.com/images.vive.travel/photos/39278/xlarge/_DSC9323.jpg?1576534669")
+    no-repeat center center/cover;
+  height: 200px;
+  width: 200px;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+#place-to-hike {
+  background: url("https://whereintheworldisnina.com/wp-content/uploads/2020/04/los-nevados-paramillo-del-quindio-trekking-800x534.jpg")
+    no-repeat center center/cover;
+  height: 200px;
+  width: 200px;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+#place-to-beach {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/7/76/Cabo_San_Juan%2C_Colombia.jpg")
+    no-repeat center center/cover;
+  height: 200px;
+  width: 200px;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+#place-to-know {
+  background: url("https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/fd/bc/36.jpg")
+    no-repeat center center/cover;
+  height: 200px;
+  width: 200px;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+#place-to-be {
+  background: url("https://misstourist.com/wp-content/uploads/2019/10/what-to-see-in-bogota-660x400.jpg")
+    no-repeat center center/cover;
+  height: 200px;
+  width: 200px;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+/*staff*/
+
+#employees-info {
+  background-color: var(--secondary-bg-color);
+  color: white;
+  text-align: center;
+}
+
+#employees-info h2 {
+  padding-top: 12px;
+}
+
+#staff {
+  display: flex;
+  color: white;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+#staff-one {
+  background: url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    no-repeat center center/cover;
+  height: 450px;
+  width: 400px;
+  margin: 10px auto;
+}
+
+#staff-two {
+  background: url("https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    no-repeat center center/cover;
+  height: 450px;
+  width: 400px;
+  margin: 10px auto;
+}
+
+#staff-three {
+  background: url("https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    no-repeat center center/cover;
+  height: 450px;
+  width: 400px;
+  margin: 10px auto;
+}
+
+/**Footer**/
+
+footer {
+  background-color: var(--tertiary-bg-color);
+  text-align: center;
+  color: white;
+  height: 40vh;
+  padding-top: 24px;
+}
+
+footer h2 {
+  font-size: 2.5rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 120px) and (max-width: 920px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 36px auto;
+  }
+
+  #showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    /*Overlay*/
+    position: absolute;
+    top: 124px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  #statement-section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  #destinations {
+    display: flex;
+    background-color: var(--tertiary-bg-color);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 12px;
+    flex-direction: column;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  #staff {
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+  }
+}
